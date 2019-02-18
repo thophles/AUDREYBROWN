@@ -1,0 +1,9 @@
+#specialMenu
+{
+  top: 48% !important;
+}
+a, a:hover, a:focus
+{
+  color: #f36b34;
+  text-decoration: none;
+}

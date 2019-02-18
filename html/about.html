@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Audrey Brown: About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="viewport" content="shrink-to-fit=no">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/sharedStyles.css" type="text/css">
+<link rel="stylesheet" href="../css/aboutStyles.css" type="text/css">
+<link rel="stylesheet" href="../css/hamburgers.css" type="text/css">
+</head>
+<body>
+<div class="logo">
+  <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
+</div>
+<div class="homeBack">
+  <img class="homeImage" src="../assets/orangeLine.png">
+</div>
+<div class="bioText">
+  <p>Audrey was born in Chicago, Illinois, and spent most of her childhood in Dallas, Texas. She now attends the School of the Art Institute of Chicago with a focal point in Visual Communications Design, and is an aspiring Graphic Designer and Creative Director. Her other interests include photography, screen printing, and collaging, and embroidery.</p>
+  <h6>Contact:</h6>
+  <p>469.766.2522<br>audreybrown.design@gmail.com</p>
+</div>
+<div id="myNav" class="navOverlay">
+  <div class="navOverlay-content">
+    <ul>
+      <li><a href="work.html">work</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="resume.html">resume</a></li>
+    </ul>
+  </div>
+</div>
+<button onclick="toggleNav()" id="button" class="hamburger icon hamburger--elastic" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<div class="menu">
+  <ul class="links">
+    <li><a href="work.html">work</a></li>
+    <li><a id="active" href="about.html">about</a></li>
+    <li><a href="resume.html">resume</a></li>
+  </ul>
+</div>
+</body>
+<script>
+var navOpen = false;
+var myNav = document.getElementById("myNav");
+var butt = document.getElementById("button");
+function openNav()
+  {
+     myNav.style.width = "100%";
+     butt.classList.add("is-active");
+     navOpen = true;
+  }
+  function closeNav()
+  {
+     myNav.style.width = "0%";
+     butt.classList.remove("is-active");
+     navOpen = false;
+  }
+  function toggleNav()
+  {
+     if (navOpen == false)
+     {
+       openNav();
+     }
+     else
+     {
+       closeNav();
+     }
+  }
+</script>
+</html>

@@ -1,0 +1,67 @@
+h5
+{
+  font-weight: 700;
+  color: #f36b34;
+}
+h6
+{
+  font-weight: 700;
+  color: #000;
+}
+a, a:hover, a:focus
+{
+  color: #f36b34;
+  text-decoration: none;
+}
+.dot
+{
+  height: 8px;
+  width: 8px;
+  background-color: #f36b34;
+  border-radius: 50%;
+  display: inline-block;
+}
+.vertical-center
+{
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one 🙂       */
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 5%;
+}
+
+@media (min-width: 900px)
+{
+  .vertical-center
+  {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+  #shortColumn
+  {
+    max-width: 45% !important;
+  }
+  #shortColumn. #largeColumn
+  {
+    padding-right: 0px;
+  }
+}
+@media (min-width: 500px) and (max-width: 1280px)
+{
+  h5
+  {
+    font-size: 1em;
+  }
+  h6
+  {
+    font-size: .9em;
+  }
+  p
+  {
+    font-size: .8em;
+  }
+}

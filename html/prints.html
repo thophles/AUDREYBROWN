@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Work: PRINTS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="viewport" content="shrink-to-fit=no">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+<link rel="stylesheet" href="../css/sharedStyles.css" type="text/css">
+<link rel="stylesheet" href="../css/swiperStyle.css" type="text/css">
+<link rel="stylesheet" href="../css/workStyle.css" type="text/css">
+<link rel="stylesheet" href="../css/hamburgers.css" type="text/css">
+</head>
+<body>
+  <div class="caption">
+    <!-- <h4>PRINTS</h4> -->
+    <!-- <p>A concept for a rebrand of Virgin Airlines. The mark is based on the middle fold of a paper airplane.</p> -->
+    </div>
+  <div class="swiper-container swiper-container-two">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide swiper-slide-two">
+      <img src="../assets/print1.png" style="width: 100%">
+    </div>
+    <div class="swiper-slide swiper-slide-two">
+      <img src="../assets/print2.png" style="width: 80%">
+    </div>
+    <div class="swiper-slide swiper-slide-two">
+      <img src="../assets/print3.png" style="width: 80%">
+    </div>
+    <div class="swiper-slide swiper-slide-two">
+      <img src="../assets/print4.png" style="width: 70%">
+    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="logo">
+    <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
+  </div>
+  <div id="myNav" class="navOverlay">
+    <div class="navOverlay-content">
+      <ul>
+        <li><a href="work.html">work</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="resume.html">resume</a></li>
+      </ul>
+    </div>
+  </div>
+  <button onclick="toggleNav()" id="button" class="hamburger icon hamburger--elastic" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <div class="menu" id="specialMenu">
+    <ul class="links">
+      <li><a id="active" href="work.html">work</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="resume.html">resume</a></li>
+    </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      freeMode: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      mousewheel:
+      {
+      invert: false,
+      },
+    });
+</script>
+<script>
+var navOpen = false;
+var myNav = document.getElementById("myNav");
+var butt = document.getElementById("button");
+function openNav()
+  {
+     myNav.style.width = "100%";
+     butt.classList.add("is-active");
+     navOpen = true;
+  }
+  function closeNav()
+  {
+     myNav.style.width = "0%";
+     butt.classList.remove("is-active");
+     navOpen = false;
+  }
+  function toggleNav()
+  {
+     if (navOpen == false)
+     {
+       openNav();
+     }
+     else
+     {
+       closeNav();
+     }
+  }
+</script>
+</body>
+</html>

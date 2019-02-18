@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Audrey Brown</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="viewport" content="shrink-to-fit=no">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="css/homeStyles.css" type="text/css">
+<link rel="stylesheet" href="css/sharedStyles.css" type="text/css">
+<link rel="stylesheet" href="css/hamburgersHome.css" type="text/css">
+</head>
+<body>
+<div class="logo">
+  <a href="index.html"><img src="assets/whiteLogo.png"></a>
+</div>
+<div class="homeBack">
+  <img class="homeImage" src="assets/lineImage.png">
+</div>
+<div class="homeText">
+  <h1>Hello.</h1>
+  <h5>My name is Audrey Brown, and <br> I'm a graphic designer.</h6>
+</div>
+<div id="myNav" class="navOverlay">
+  <div class="navOverlay-content">
+    <ul>
+      <li><a href="html/work.html">work</a></li>
+      <li><a href="html/about.html">about</a></li>
+      <li><a href="html/resume.html">resume</a></li>
+    </ul>
+  </div>
+</div>
+<button onclick="toggleNav()" id="button" class="hamburger icon hamburger--elastic" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner" id="home-inner"></span>
+  </span>
+</button>
+<div class="menu">
+  <ul class="links">
+    <li><a href="html/work.html">work</a></li>
+    <li><a href="html/about.html">about</a></li>
+    <li><a href="html/resume.html">resume</a></li>
+  </ul>
+</div>
+</body>
+<script>
+var navOpen = false;
+var myNav = document.getElementById("myNav");
+var butt = document.getElementById("button");
+function openNav()
+  {
+     myNav.style.width = "100%";
+     butt.classList.add("is-active");
+     navOpen = true;
+  }
+  function closeNav()
+  {
+     myNav.style.width = "0%";
+     butt.classList.remove("is-active");
+     navOpen = false;
+  }
+  function toggleNav()
+  {
+     if (navOpen == false)
+     {
+       openNav();
+     }
+     else
+     {
+       closeNav();
+     }
+  }
+</script>
+</html>

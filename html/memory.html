@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Work: A BITTERSWEET MEMORY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="viewport" content="shrink-to-fit=no">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+<link rel="stylesheet" href="../css/sharedStyles.css" type="text/css">
+<link rel="stylesheet" href="../css/swiperStyle.css" type="text/css">
+<link rel="stylesheet" href="../css/workStyle.css" type="text/css">
+<link rel="stylesheet" href="../css/hamburgers.css" type="text/css">
+</head>
+<body>
+  <div class="caption" id="specialCaption">
+    <h4>A BITTERSWEET MEMORY</h4>
+    <p>A letterpress and screen printed piece for a group portfolio based on childhood memories. Each piece in the portfolio was to contain a numeral representing the age of the memory, an image, and a contemporary letterpress practice. The memories I chose are associated with my family's move from Chicago to Dallas as a child. I chose two contrasting experiences to convey feelings of conflict I felt.</p>
+    </div>
+  <div class="swiper-container swiper-container-two">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide swiper-slide-two">
+      <img src="../assets/memory1.png" style="width: 100%">
+    </div>
+    <div class="swiper-slide swiper-slide-two">
+      <img src="../assets/memory2.png" style="width: 80%">
+    </div>
+    <div class="swiper-slide swiper-slide-two">
+      <img src="../assets/memory3.png" style="width: 50%">
+    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="logo">
+    <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
+  </div>
+  <div id="myNav" class="navOverlay">
+    <div class="navOverlay-content">
+      <ul>
+        <li><a href="work.html">work</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="resume.html">resume</a></li>
+      </ul>
+    </div>
+  </div>
+  <button onclick="toggleNav()" id="button" class="hamburger icon hamburger--elastic" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <div class="menu" id="specialMenu">
+    <ul class="links">
+      <li><a id="active" href="work.html">work</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="resume.html">resume</a></li>
+    </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      freeMode: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+</script>
+<script>
+var navOpen = false;
+var myNav = document.getElementById("myNav");
+var butt = document.getElementById("button");
+function openNav()
+  {
+     myNav.style.width = "100%";
+     butt.classList.add("is-active");
+     navOpen = true;
+  }
+  function closeNav()
+  {
+     myNav.style.width = "0%";
+     butt.classList.remove("is-active");
+     navOpen = false;
+  }
+  function toggleNav()
+  {
+     if (navOpen == false)
+     {
+       openNav();
+     }
+     else
+     {
+       closeNav();
+     }
+  }
+</script>
+</body>
+</html>

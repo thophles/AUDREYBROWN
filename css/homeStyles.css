@@ -1,0 +1,60 @@
+
+body
+{
+  background-color: #f36b34;
+  font-family: 'Arvo', serif;
+  color:#fff;
+}
+h1
+{
+  font-size: 9em;
+}
+h5
+{
+  font-size: 2em;
+  line-height: 1.5;
+}
+.homeText
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+}
+a, a:hover, a:focus
+{
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 1260px)
+{
+  .homeText
+  {
+    left: 55%;
+  }
+  h1
+  {
+    font-size: 7.5em;
+  }
+  h5
+  {
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 420px)
+{
+  .homeText
+  {
+    left: 55%;
+  }
+  h1
+  {
+    font-size: 6.3em;
+  }
+  h5
+  {
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+}

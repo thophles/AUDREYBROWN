@@ -1,0 +1,37 @@
+
+.bioText
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  width: 450px;
+}
+a, a:hover, a:focus
+{
+  color: #f36b34;
+  text-decoration: none;
+}
+h6
+{
+  color: #f36b34;
+  font-weight: 700;
+}
+@media (max-width: 768px)
+{
+  .homeImage
+  {
+    opacity: .5;
+  }
+  .bioText
+  {
+    position: absolute;
+    margin: 0 auto;
+    padding-left: 10%;
+    top: 40%;
+    left: 0;
+    transform: translate(0%, 0%);
+    z-index: 0;
+    width: 90%;
+  }
+}

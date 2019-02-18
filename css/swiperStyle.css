@@ -1,0 +1,151 @@
+html, body
+{
+  height: 100%;
+  width: 100vw;
+}
+body
+{
+  color:#fff;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container-one
+{
+  width: 100%;
+  height: 100%;
+}
+.swiper-container-two
+{
+  width: 80%;
+  height: 100%;
+}
+.swiper-slide
+{
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide-one
+{
+  background-color: #fff;
+  width: 40%;
+  height: 50% !important;
+  left: 65%;
+  overflow: hidden;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+.swiper-slide-two
+{
+  background-color: transparent;
+  height: 55%;
+  width: 100%;
+  position: relative;
+  transform: translate(-50%, 30%);
+}
+.swiper-pagination-custom
+{
+  left: 5%;
+  position: fixed;
+  z-index: -99;
+  top: 60% !important;
+}
+.dot
+{
+  height: 8px;
+  width: 8px;
+  background-color: #f36b34;
+  border-radius: 50%;
+}
+.wrapper
+{
+  position: relative;
+  width: 100%;
+	height: 100%;
+}
+.image
+{
+  width: 120%;
+  height: auto;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.wrapper:hover .image
+{
+  -webkit-filter: blur(10px);
+  -moz-filter: all .25s ease;
+  -o-filter: all .25s ease;
+  -ms-filter: all .25s ease;
+  filter: blur(10px);
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: (255, 255, 255, .1);
+}
+.wrapper:hover .overlay
+{
+  opacity: 1;
+}
+.text
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text a, .text a:hover, .text a:focus
+{
+  font-size: 3em;
+  text-decoration: none;
+  color: #f36b34;
+  letter-spacing: 2px;
+}
+@media (max-width: 420px)
+{
+  .swiper-container-two
+  {
+    width: 130%;
+    height: 100%;
+    position: relative;
+    left: 7%;
+  }
+  .swiper-slide-two
+  {
+    background-color: transparent;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .image
+  {
+    height: 100%;
+    width: auto;
+  }
+  .text a, .text a:hover, .text a:focus
+  {
+    font-size: 2em;
+  }
+}
