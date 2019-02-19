@@ -14,13 +14,25 @@
 </head>
 <body>
   <div class="contain">
-    <div class="bigImage" id="bigImageTeeth"></div>
-    <div class="smallImage" id="smallImageTeeth"></div>
+    <div class="bigImage">
+      <img class="myImg" src="../assets/teeth2.png" style="width: 100%">
+    </div>
+    <div class="smallImage">
+      <img class="myImg" src="../assets/teeth1.png" style="height: 100%">
+    </div>
     <div class="captionTwo">
       <h4>TEETH / TONGUE</h4>
       <p>A letterpress piece illustrating the word pair teeth and tongue. Typefaces used are Torino and Helvetica.</p>
       </div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close"> &#x2715; </span>
+    <div class="modal-content">
+      <img id="img01" style="width: 90%">
+    </div>
+  </div>
+
   <div class="logo">
     <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
   </div>
@@ -46,6 +58,7 @@
     </ul>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="../javascript/modalZoom.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,

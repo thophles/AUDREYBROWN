@@ -14,14 +14,28 @@
 </head>
 <body>
   <div class="contain">
-    <div class="bigImage" id="bigImageDisruption"></div>
-    <div class="smallImageOne" id="smallImageDisOne"></div>
-    <div class="smallImageTwo" id="smallImageDisTwo"></div>
+    <div class="bigImage">
+      <img class="myImg" src="../assets/disruption1.png" style="width: 100%">
+    </div>
+    <div class="smallImageOne">
+      <img class="myImg" src="../assets/disruption2.png" style="height: 100%">
+    </div>
+    <div class="smallImageTwo">
+      <img class="myImg" src="../assets/disruption2.png" style="height: 100%">
+    </div>
     <div class="captionThree">
       <h4>DISRUPTION POSTER</h4>
       <p>A poster on the disruption of self caused by the side effects of ADHD medications.</p>
       </div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close"> &#x2715; </span>
+    <div class="modal-content">
+      <img id="img01" style="width: 90%">
+    </div>
+  </div>
+  
   <div class="logo">
     <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
   </div>
@@ -47,6 +61,7 @@
     </ul>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="../javascript/modalZoom.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,

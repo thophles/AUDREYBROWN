@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Work: What's in my Bag?</title>
+<title>Work: WHAT'S IN MY BAG?</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <meta name="viewport" content="shrink-to-fit=no">
 <meta name="viewport" content="width=device-width">
@@ -13,21 +14,26 @@
 <link rel="stylesheet" href="../css/hamburgers.css" type="text/css">
 </head>
 <body>
-  <div class="caption">
-    <h4>WHAT'S IN MY BAG?</h4>
-    <p>This book offers a look into my backpack, acting as a self-portrait. The items are divided into five different categories with corresponding colors that are  overlapped, creating an x-ray like image.</p>
+  <div class="contain">
+    <div class="bigImage">
+      <img class="myImg" src="../assets/bag2.png" style="width: 100%">
     </div>
-  <div class="swiper-container swiper-container-two">
-    <div class="swiper-wrapper">
-    <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/bag1.png" style="width: 50%">
+    <div class="smallImage">
+      <img class="myImg" src="../assets/bag1.png" style="height: 100%">
     </div>
-    <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/bag2.png" style="width: 50%">
-    </div>
-    </div>
-    <div class="swiper-pagination"></div>
+    <div class="captionTwo">
+      <h4>WHAT'S IN MY BAG?</h4>
+      <p>This book offers a look into my backpack, acting as a self-portrait. The items are divided into five different categories with corresponding colors that are  overlapped, creating an x-ray like image.</p>
+      </div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close"> &#x2715; </span>
+    <div class="modal-content">
+      <img id="img01" style="width: 90%">
+    </div>
+  </div>
+
   <div class="logo">
     <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
   </div>
@@ -53,6 +59,7 @@
     </ul>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="../javascript/modalZoom.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,

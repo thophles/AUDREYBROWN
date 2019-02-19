@@ -20,20 +20,28 @@
   <div class="swiper-container swiper-container-two">
     <div class="swiper-wrapper">
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/beer4.jpg" style="width: 100%">
+      <img class="myImg" src="../assets/beer4.jpg" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/beer3.jpg" style="width: 100%">
+      <img class="myImg" src="../assets/beer3.jpg" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/beer1.jpg" style="width: 100%">
+      <img class="myImg" src="../assets/beer1.jpg" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/beer2.jpg" style="width: 100%">
+      <img class="myImg" src="../assets/beer2.jpg" style="width: 100%">
     </div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close"> &#x2715; </span>
+    <div class="modal-content">
+      <img id="img01" style="width: 90%">
+    </div>
+  </div>
+
   <div class="logo">
     <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
   </div>
@@ -59,6 +67,7 @@
     </ul>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="../javascript/modalZoom.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,

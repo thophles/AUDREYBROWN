@@ -14,13 +14,25 @@
 </head>
 <body>
   <div class="contain">
-    <div class="bigImage" id="bigImageMCC"></div>
-    <div class="smallImage" id="smallImageMCC"></div>
+    <div class="bigImage">
+      <img class="myImg" src="../assets/mcc1.png" style="width: 100%">
+    </div>
+    <div class="smallImage">
+      <img class="myImg" src="../assets/mcc2.png" style="height: 100%">
+    </div>
     <div class="captionTwo">
       <h4>MCC POSTER</h4>
       <p>A poster on the Metropolitan Correctional Center in downtown Chicago designed by Harry Weese in the 1970s. The silhouettes of the prison windows are surrounded by other close buildings and structures, demonstrating the concept of an urban prison.</p>
       </div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close"> &#x2715; </span>
+    <div class="modal-content">
+      <img id="img01" style="width: 90%">
+    </div>
+  </div>
+
   <div class="logo">
     <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
   </div>
@@ -46,6 +58,7 @@
     </ul>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="../javascript/modalZoom.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,

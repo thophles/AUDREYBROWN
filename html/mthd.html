@@ -20,29 +20,34 @@
   <div class="swiper-container swiper-container-two">
     <div class="swiper-wrapper">
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/MTHD_cover.png" style="width: 90%">
+      <img class="myImg" src="../assets/MTHD_cover.png" style="width: 90%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/mthdmu1.png" style="width: 100%">
+      <img class="myImg" src="../assets/mthdmu1.png" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/mthdmu1.png" style="width: 100%">
+      <img class="myImg" src="../assets/mthdmu2.png" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/mthdmu2.png" style="width: 100%">
+      <img class="myImg" src="../assets/mthdmu3.png" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/mthdmu3.png" style="width: 100%">
+      <img class="myImg" src="../assets/mthdmu4.png" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/mthdmu4.png" style="width: 100%">
-    </div>
-    <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/mthdmu5.png" style="width: 100%">
+      <img class="myImg" src="../assets/mthdmu5.png" style="width: 100%">
     </div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close"> &#x2715; </span>
+    <div class="modal-content">
+      <img id="img01" style="width: 90%">
+    </div>
+  </div>
+
   <div class="logo">
     <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
   </div>
@@ -68,6 +73,7 @@
     </ul>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="../javascript/modalZoom.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,

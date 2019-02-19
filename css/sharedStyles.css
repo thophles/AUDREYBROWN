@@ -27,7 +27,7 @@ p, h4
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: -99;
+  z-index: 0;
   transform: translate(-50%, -50%);
 }
 .homeBack
@@ -130,7 +130,7 @@ button
   background-repeat: no-repeat;
   width: 40%;
   position: fixed;
-  /* top: 15%; */
+  z-index: 1;
 }
 .bigImage
 {
@@ -153,34 +153,94 @@ button
 {
   top: 35%;
 }
-#bigImageTeeth
+
+
+/* LIGHTBOX ZOOM STYLES */
+/* LIGHTBOX ZOOM STYLES */
+/* LIGHTBOX ZOOM STYLES */
+
+
+.myImg
 {
-  background-image: url("../assets/teeth1.png");
+  cursor: pointer;
+  transition: 0.3s;
 }
-#smallImageTeeth
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal
 {
-  background-image: url("../assets/teeth2.png");
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0.8);
 }
-#bigImageMCC
+/* Modal Content (image) */
+.modal-content
 {
-  background-image: url("../assets/mcc1.png");
+  width: 60%;
+  height: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
 }
-#smallImageMCC
+#img01
 {
-  background-image: url("../assets/mcc2.png");
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-#bigImageDisruption
+/* Add Animation */
+.modal-content
 {
-  background-image: url("../assets/disruption1.png");
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.1s;
+  animation-name: zoom;
+  animation-duration: 0.1s;
 }
-#smallImageDisOne
+
+@-webkit-keyframes zoom
 {
-  background-image: url("../assets/disruption2.png");
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
 }
-#smallImageDisTwo
+@keyframes zoom
 {
-  background-image: url("../assets/disruption3.png");
+  from {transform:scale(0)}
+  to {transform:scale(1)}
 }
+/* The Close Button */
+.close
+{
+  position: fixed;
+  top: 15px;
+  right: 5%;
+  color: #f36b34 !important;
+  font-size: 30px;
+  font-weight: normal;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus
+{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* MOBILE STYLING */
+
 @media (max-width: 420px)
 {
   .swiper-pagination

@@ -20,59 +20,67 @@
   <div class="swiper-container swiper-container-two">
     <div class="swiper-wrapper">
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage1.jpg" style="width: 90%">
+      <img class="myImg" src="../assets/collage1.jpg" style="width: 90%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage2.png" style="width: 80%">
+      <img class="myImg" src="../assets/collage2.png" style="width: 80%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage3.jpg" style="width: 100%">
+      <img class="myImg" src="../assets/collage3.jpg" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage4.png" style="width: 65%">
+      <img class="myImg" src="../assets/collage4.png" style="width: 65%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage5.png" style="width: 100%">
+      <img class="myImg" src="../assets/collage5.png" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage6.png" style="width: 70%">
+      <img class="myImg" src="../assets/collage6.png" style="width: 70%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage7.png" style="width: 70%">
+      <img class="myImg" src="../assets/collage7.png" style="width: 70%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage8.jpg" style="width: 60%">
+      <img class="myImg" src="../assets/collage8.jpg" style="width: 60%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage9.png" style="width: 90%">
+      <img class="myImg" src="../assets/collage9.png" style="width: 90%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage10.jpg" style="width: 70%">
+      <img class="myImg" src="../assets/collage10.jpg" style="width: 70%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage11.jpg" style="width: 100%">
+      <img class="myImg" src="../assets/collage11.jpg" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage12.jpg" style="width: 90%">
+      <img class="myImg" src="../assets/collage12.jpg" style="width: 90%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage13.jpg" style="width: 100%">
+      <img class="myImg" src="../assets/collage13.jpg" style="width: 100%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage14.jpg" style="width: 70%">
+      <img class="myImg" src="../assets/collage14.jpg" style="width: 70%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage15.jpg" style="width: 75%">
+      <img class="myImg" src="../assets/collage15.jpg" style="width: 75%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage16.jpg" style="width: 65%">
+      <img class="myImg" src="../assets/collage16.jpg" style="width: 65%">
     </div>
     <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/collage17.jpg" style="width: 100%">
+      <img class="myImg" src="../assets/collage17.jpg" style="width: 100%">
     </div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close"> &#x2715; </span>
+    <div class="modal-content">
+      <img id="img01" style="width: 90%">
+    </div>
+  </div>
+
   <div class="logo">
     <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
   </div>
@@ -98,6 +106,7 @@
     </ul>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="../javascript/modalZoom.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
