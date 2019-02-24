@@ -119,7 +119,7 @@ body
 }
 .text a, .text a:hover, .text a:focus
 {
-  font-size: 3em;
+  font-size: 2.5em;
   text-decoration: none;
   color: #f36b34;
   letter-spacing: 2px;
@@ -157,6 +157,6 @@ body
   }
   .text a, .text a:hover, .text a:focus
   {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 }
