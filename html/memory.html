@@ -7,30 +7,33 @@
 <meta name="viewport" content="shrink-to-fit=no">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/sharedStyles.css" type="text/css">
 <link rel="stylesheet" href="../css/swiperStyle.css" type="text/css">
 <link rel="stylesheet" href="../css/workStyle.css" type="text/css">
 <link rel="stylesheet" href="../css/hamburgers.css" type="text/css">
 </head>
 <body>
-  <div class="caption" id="specialCaption">
-    <h4>A BITTERSWEET MEMORY</h4>
-    <p>A letterpress and screen printed piece for a group portfolio based on childhood memories. Each piece in the portfolio was to contain a numeral representing the age of the memory, an image, and a contemporary letterpress practice. The memories I chose are associated with my family's move from Chicago to Dallas as a child. I chose two contrasting experiences to convey feelings of conflict I felt.</p>
+  <div class="contain">
+    <div class="bigImage">
+      <img class="myImg" src="../assets/memory3.png" style="width: 100%">
     </div>
-  <div class="swiper-container swiper-container-two">
-    <div class="swiper-wrapper">
-    <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/memory1.png" style="width: 100%">
+    <div class="smallImage">
+      <img class="myImg" src="../assets/memory2.png" style="width: 100%">
     </div>
-    <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/memory2.png" style="width: 80%">
-    </div>
-    <div class="swiper-slide swiper-slide-two">
-      <img src="../assets/memory3.png" style="width: 50%">
-    </div>
-    </div>
-    <div class="swiper-pagination"></div>
+    <div class="captionTwo">
+      <h4>A BITTERSWEET MEMORY</h4>
+      <p>A letterpress and screen printed piece for a group portfolio based on childhood memories. Each piece in the portfolio was to contain a numeral representing the age of the memory, an image, and a contemporary letterpress practice. The memories I chose are associated with my family's move from Chicago to Dallas as a child. I chose two contrasting experiences to convey feelings of conflict I felt.</p>
+      </div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close"> &#x2715; </span>
+    <div class="modal-content">
+      <img id="img01" style="width: 90%">
+    </div>
+  </div>
+
   <div class="logo">
     <a href="../index.html"><img src="../assets/orangeLogo.png"></a>
   </div>
@@ -55,9 +58,34 @@
       <li><a href="resume.html">resume</a></li>
     </ul>
   </div>
+
+<div class="mobilePage container">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-12" align="center">
+      <h5 class="mobileh5">A BITTERSWEET MEMORY</h5>
+      <p>A letterpress and screen printed piece for a group portfolio based on childhood memories. Each piece in the portfolio was to contain a numeral representing the age of the memory, an image, and a contemporary letterpress practice. The memories I chose are associated with my family's move from Chicago to Dallas as a child. I chose two contrasting experiences to convey feelings of conflict I felt.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" align="center">
+      <img src="../assets/memory2.png" style="width: 90%">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-12" align="center">
+      <img src="../assets/memory3.png" style="width: 90%">
+    </div>
+  </div>
+  <br>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 <script src="../javascript/modalZoom.js"></script>
-<script src="../javascript/projectSwipe.js"></script>
 <script>
 var navOpen = false;
 var myNav = document.getElementById("myNav");
