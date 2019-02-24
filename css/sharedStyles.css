@@ -289,6 +289,7 @@ button
     transform: translate(-45%, 15%);
     width: auto;
     height: 90vh;
+    opacity: .5;
   }
   .caption
   {
@@ -298,13 +299,6 @@ button
   {
     font-size: .9em;
     padding: 0 15px;
-  }
-}
-@media (min-width: 768px)
-{
-  body
-  {
-    overflow: hidden !important;
   }
 }
 @media (max-width: 800px)
@@ -370,10 +364,6 @@ button
   {
     display: none;
   }
-  .homeImage
-  {
-    opacity: .5;
-  }
   .homeText
   {
     top: 80%;
@@ -429,10 +419,18 @@ button
 @media only screen
 and (min-width : 768px) and (max-width : 1024px)
 {
+  h1
+  {
+    font-size: 9em;
+  }
+  h5
+  {
+    font-size: 2em;
+  }
   .homeImage
   {
     position: relative;
-    transform: translate(0%, 10%);
+    transform: translate(0%, 15%);
     width: auto;
     height: 90vh;
   }
@@ -456,13 +454,13 @@ and (min-width : 768px) and (max-width : 1024px)
   {
     display: block !important;
   }
-  .menu
-  {
-    display: none;
-  }
   .homeImage
   {
     opacity: .5;
+  }
+  .menu
+  {
+    display: none;
   }
   .homeText
   {
@@ -489,7 +487,7 @@ and (min-width : 768px) and (max-width : 1024px)
   	padding-right: 3%;
     position: fixed;
     top: 2%;
-    left: 82%;
+    left: 90%;
     z-index: 100;
   }
   .navOverlay-content li
@@ -518,10 +516,19 @@ and (min-width : 768px) and (max-width : 1024px)
 }
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)
 {
+  h1
+  {
+    font-size: 9.3em;
+  }
+  h5
+  {
+    font-size: 2.2em;
+  }
+
   .homeImage
   {
     position: relative;
-    transform: translate(0%, 10%);
+    transform: translate(0%, 15%);
     width: auto;
     height: 90vh;
   }
@@ -532,6 +539,10 @@ and (min-width : 768px) and (max-width : 1024px)
   .contain
   {
     display: none;
+  }
+  .homeImage
+  {
+    opacity: .5;
   }
   .swiper-container-two
   {
@@ -548,10 +559,6 @@ and (min-width : 768px) and (max-width : 1024px)
   .menu
   {
     display: none;
-  }
-  .homeImage
-  {
-    opacity: .5;
   }
   .homeText
   {
@@ -578,7 +585,7 @@ and (min-width : 768px) and (max-width : 1024px)
     padding-right: 3%;
     position: fixed;
     top: 2%;
-    left: 82%;
+    left: 90%;
     z-index: 100;
   }
   .navOverlay-content li
