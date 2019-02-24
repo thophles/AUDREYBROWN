@@ -17,11 +17,17 @@ h6
   color: #f36b34;
   font-weight: 700;
 }
+.contact
+{
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 2px;
+}
 @media (max-width: 768px)
 {
   .homeImage
   {
-    opacity: .5;
+    opacity: .3;
   }
   .bioText
   {
