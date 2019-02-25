@@ -626,10 +626,3 @@ button
     left: 50% !important;
   }
 }
-@media only screen and (min-width : 1024px) and (min-width : 1366px) and (orientation : landscape)
-{
-  .homeBack
-  {
-    left: 0% !important;
-  }
-}
