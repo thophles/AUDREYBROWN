@@ -626,3 +626,17 @@ button
     left: 50% !important;
   }
 }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation : landscape)
+{
+  .homeBack
+  {
+    left: 0% !important;
+  }
+}
+@media (width: 1280px) and (height: 800px)
+{
+  .homeBack
+  {
+    left: 10% !important;
+  }
+}
