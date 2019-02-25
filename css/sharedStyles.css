@@ -424,8 +424,12 @@ button
     color: #f36b34;
   }
 }
-/* @media only screen and (min-device-width : 768px) and (min-device-width : 1024px)
+@media only screen and (min-width : 768px) and (min-width : 1024px) and (orientation : portrait)
 {
+  body
+  {
+    overflow: scroll !important;
+  }
   button
   {
     display: inline-block !important;
@@ -455,6 +459,18 @@ button
     top: 80%;
     left: 5%;
     transform: translate(0%, -50%);
+  }
+  .homeImage
+  {
+    opacity: .5;
+  }
+  .homeText h1
+  {
+    font-size: 12em !important;
+  }
+  .homeText h5
+  {
+    font-size: 3em !important;
   }
   .navOverlay
   {
@@ -501,4 +517,119 @@ button
   {
     color: #f36b34;
   }
-} */
+  .swiper-slide
+  {
+    width: 80% !important;
+    height: 70% !important;
+    position: relative !important;
+    left: 50% !important;
+  }
+}
+@media only screen and (min-width : 1024px) and (min-width : 1366px) and (orientation : portrait)
+{
+  body
+  {
+    overflow: scroll !important;
+  }
+  button
+  {
+    display: inline-block !important;
+  }
+  .contain
+  {
+    display: none;
+  }
+  .swiper-container-two
+  {
+    display: none;
+  }
+  .caption
+  {
+    display: none;
+  }
+  .mobilePage
+  {
+    display: block !important;
+  }
+  .menu
+  {
+    display: none;
+  }
+  .homeText
+  {
+    top: 80%;
+    left: 5%;
+    transform: translate(0%, -50%);
+  }
+  .homeImage
+  {
+    opacity: .5;
+  }
+  .homeText h1
+  {
+    font-size: 12em !important;
+  }
+  .homeText h5
+  {
+    font-size: 3em !important;
+  }
+  .navOverlay
+  {
+  	float: right;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: block;
+  }
+  .icon
+  {
+  	padding-right: 3%;
+    position: fixed;
+    top: 2%;
+    left: 90% !important;
+    z-index: 100;
+  }
+  .navOverlay-content li
+  {
+    padding: 20px 0px;
+  }
+  .navOverlay-content
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .navOverlay-content a
+  {
+    text-decoration: none;
+    font-size: 36px;
+    color: #f36b34;
+    transition: 0.3s;
+  }
+  .navOverlay a:hover, .navOverlay a:focus
+  {
+    color: #f36b34;
+  }
+  .swiper-slide
+  {
+    width: 80% !important;
+    height: 70% !important;
+    position: relative !important;
+    left: 50% !important;
+  }
+}
+@media only screen and (min-width : 1024px) and (min-width : 1366px) and (orientation : landscape)
+{
+  .homeBack
+  {
+    left: 0% !important;
+  }
+}
