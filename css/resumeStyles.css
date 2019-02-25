@@ -50,7 +50,7 @@ a, a:hover, a:focus
     padding-right: 0px;
   }
 }
-@media (min-width: 500px) and (max-width: 1250px)
+@media (min-width: 500px) and (max-width: 1450px)
 {
   h5
   {
@@ -66,7 +66,7 @@ a, a:hover, a:focus
   }
 }
 @media only screen
-and (device-width : 768px) and (device-width : 1024px)
+and (min-device-width : 768px) and (min-device-width : 1024px)
 {
   h5
   {
@@ -81,7 +81,7 @@ and (device-width : 768px) and (device-width : 1024px)
     font-size: .7em;
   }
 }
-@media only screen and (device-width: 1024px) and (device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)
+/* @media only screen and (device-width: 1024px) and (device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)
 {
   h5
   {
@@ -95,4 +95,4 @@ and (device-width : 768px) and (device-width : 1024px)
   {
     font-size: .7em;
   }
-}
+} */
