@@ -50,7 +50,7 @@ a, a:hover, a:focus
     padding-right: 0px;
   }
 }
-@media (min-width: 500px) and (max-width: 1450px)
+@media (min-width: 500px) and (max-width: 1430px)
 {
   h5
   {
