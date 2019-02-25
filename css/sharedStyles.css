@@ -307,8 +307,7 @@ button
   {
     overflow: hidden !important;
   }
-
-
+}
 @media (max-width: 800px)
 {
   .logo
