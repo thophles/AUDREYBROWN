@@ -194,53 +194,9 @@
             el: '.swiper-pagination',
             type: 'bullets',
             clickable: true,
-            renderCustom: function(swiper, current, total)
-            {
-            var text = "<span class='pContainer' style='background-color:transparent;width:100%;text-align:left'>";
-            for (let i = 1; i <=total; i++)
-            {
-                if (current == i)
-                {
-                    text += "<span style='text-align:left;width:20%;color:#f36b34;font-size:26px;'>" + pages[i-1] + "</span>" + "<br />";
-                }
-                else
-                {
-                    text += "<span style='text-align:left;margin-right:60px;width: 20%;color:#f36b34;padding:5%x;font-size:12px;'>" + pages[i-1] + "</span>" + "<br />";
-                }
-            }
-            text += "</span>";
-            return text;
-            }
           },
       });
 </script>
-<script>
-var navOpen = false;
-var myNav = document.getElementById("myNav");
-var butt = document.getElementById("button");
-function openNav()
-  {
-     myNav.style.width = "100%";
-     butt.classList.add("is-active");
-     navOpen = true;
-  }
-  function closeNav()
-  {
-     myNav.style.width = "0%";
-     butt.classList.remove("is-active");
-     navOpen = false;
-  }
-  function toggleNav()
-  {
-     if (navOpen == false)
-     {
-       openNav();
-     }
-     else
-     {
-       closeNav();
-     }
-  }
-</script>
+<script src="../javascript/menuToggle.js"></script>
 </body>
 </html>
