@@ -55,6 +55,14 @@ body
   position: relative;
   transform: translate(-50%, 30%);
 }
+.swiper-slide-three
+{
+  background-color: transparent;
+  height: 564px;
+  width: 640px;
+  position: relative;
+  transform: translate(-50%, 20%);
+}
 .swiper-pagination-custom
 {
   left: 5%;
