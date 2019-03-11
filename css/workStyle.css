@@ -7,3 +7,24 @@ a, a:hover, a:focus
   color: #f36b34;
   text-decoration: none;
 }
+.videowrap iframe
+{
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.videowrap
+{
+	height: 500px;
+	position: relative;
+}
+@media (max-width: 420px)
+{
+  .videowrap
+  {
+  	height: 200px;
+  }
+}

@@ -124,6 +124,24 @@ body
   color: #f36b34;
   letter-spacing: 2px;
 }
+@media (max-width: 1024px)
+{
+  .overlay
+  {
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+  }
+}
+@media (max-width: 768px)
+{
+  .overlay
+  {
+    height: 100%;
+    width: 100%;
+    max-height: 500px;
+  }
+}
 @media (max-width: 420px)
 {
   .swiper-container-two
@@ -158,5 +176,11 @@ body
   .text a, .text a:hover, .text a:focus
   {
     font-size: 1.7em;
+  }
+  .overlay
+  {
+    height: 100%;
+    width: 100%;
+    max-height: 200px;
   }
 }

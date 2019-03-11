@@ -270,6 +270,139 @@ button
 
 /* MOBILE STYLING */
 
+@media (max-width: 1350px)
+{
+  .menu
+  {
+    left: 78%;
+  }
+  .logo img
+  {
+    width: 60px;
+    height: auto;
+  }
+}
+@media (max-width: 1024px)
+{
+  .custom
+  {
+    max-height: 600px;
+    overflow: hidden;
+  }
+}
+@media only screen and (width : 1366px) and (height : 1024px)
+{
+  .homeBack
+  {
+    left: 0% !important;
+  }
+}
+@media only screen and (width : 1024px) and (height : 1366px) and (orientation : landscape)
+{
+  body
+  {
+    overflow: scroll !important;
+  }
+  button
+  {
+    display: inline-block !important;
+  }
+  .contain
+  {
+    display: none;
+  }
+  .swiper-container-two
+  {
+    display: none;
+  }
+  .swiper-container-one
+  {
+    display: none;
+  }
+  .caption
+  {
+    display: none;
+  }
+  .mobilePage
+  {
+    display: block !important;
+  }
+  .menu
+  {
+    display: none;
+  }
+  .homeText
+  {
+    top: 80%;
+    left: 5%;
+    transform: translate(0%, -50%);
+  }
+  .homeImage
+  {
+    opacity: .5;
+  }
+  .homeText h1
+  {
+    font-size: 12em !important;
+  }
+  .homeText h5
+  {
+    font-size: 3em !important;
+  }
+  .navOverlay
+  {
+  	float: right;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: block;
+  }
+  .icon
+  {
+  	padding-right: 3%;
+    position: fixed;
+    top: 2%;
+    left: 90% !important;
+    z-index: 100;
+  }
+  .navOverlay-content li
+  {
+    padding: 20px 0px;
+  }
+  .navOverlay-content
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .navOverlay-content a
+  {
+    text-decoration: none;
+    font-size: 36px;
+    color: #f36b34;
+    transition: 0.3s;
+  }
+  .navOverlay a:hover, .navOverlay a:focus
+  {
+    color: #f36b34;
+  }
+  .swiper-slide
+  {
+    width: 80% !important;
+    height: 70% !important;
+    position: relative !important;
+    left: 50% !important;
+  }
+}
+
 @media (max-width: 420px)
 {
   .swiper-pagination
@@ -300,7 +433,17 @@ button
     font-size: .9em;
     padding: 0 15px;
   }
+  .custom
+  {
+    max-height: 200px;
+    overflow: hidden;
+  }
+  .icon
+  {
+    left: 82%;
+  }
 }
+
 @media (min-width: 770px)
 {
   body
@@ -334,18 +477,6 @@ button
     padding: 0 15px;
   }
 }
-@media (max-width: 1350px)
-{
-  .menu
-  {
-    left: 78%;
-  }
-  .logo img
-  {
-    width: 60px;
-    height: auto;
-  }
-}
 @media (max-width: 768px)
 {
   button
@@ -359,6 +490,15 @@ button
   .swiper-container-two
   {
     display: none;
+  }
+  .swiper-container-one
+  {
+    display: none;
+  }
+  .custom
+  {
+    max-height: 500px;
+    overflow: hidden;
   }
   .caption
   {
@@ -397,7 +537,7 @@ button
   	padding-right: 3%;
     position: fixed;
     top: 2%;
-    left: 82%;
+    left: 87%;
     z-index: 100;
   }
   .navOverlay-content li
@@ -439,6 +579,10 @@ button
     display: none;
   }
   .swiper-container-two
+  {
+    display: none;
+  }
+  .swiper-container-one
   {
     display: none;
   }
@@ -543,6 +687,10 @@ button
   {
     display: none;
   }
+  .swiper-container-one
+  {
+    display: none;
+  }
   .caption
   {
     display: none;
@@ -631,5 +779,46 @@ button
   .homeBack
   {
     left: 10% !important;
+  }
+}
+
+@media (max-width: 420px)
+{
+  .swiper-pagination
+  {
+    display: none;
+  }
+  .swiper-slide
+  {
+    width: 80% !important;
+    height: 70% !important;
+    position: relative !important;
+    left: 50% !important;
+  }
+  .homeImage
+  {
+    position: relative;
+    transform: translate(-45%, 15%);
+    width: auto;
+    height: 90vh;
+    opacity: .5;
+  }
+  .caption
+  {
+    top: 115%;
+  }
+  p
+  {
+    font-size: .9em;
+    padding: 0 15px;
+  }
+  .custom
+  {
+    max-height: 200px;
+    overflow: hidden;
+  }
+  .icon
+  {
+    left: 82%;
   }
 }

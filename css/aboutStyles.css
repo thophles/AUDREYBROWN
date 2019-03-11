@@ -23,6 +23,21 @@ h6
   font-size: 1em;
   line-height: 2px;
 }
+@media only screen and (width: 1024px) and (height: 1366px)
+{
+  .bioText
+  {
+    position: absolute;
+    margin: 0 auto;
+    padding-left: 10%;
+    top: 40%;
+    left: 5%;
+    transform: translate(0%, 0%);
+    z-index: 0;
+    width: 850px;
+  }
+}
+
 @media (max-width: 768px)
 {
   .homeImage
